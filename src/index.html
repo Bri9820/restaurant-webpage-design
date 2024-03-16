@@ -12,31 +12,32 @@
 </head>
 
 <body>
-    <nav class="nav-container">
-        <!-- <h2> Fancy Restaurant</h2> -->
-        <ul class="nav nav-underline ">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="menu.html">Menu</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="team.html">Team</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="catering.html">Catering</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="reservations.html">Reservations</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact us</a>
-            </li>
-        </ul>
+    <nav class="nav-container navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="menu.html">Menu</a>
+            <a class="nav-link" href="team.html">Team</a>
+            <a class="nav-link" href="gallery.html">Gallery</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 nav nav-underline">
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="catering.html">Catering</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservations.html">Reservations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+            
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <section class="main-container">
@@ -48,14 +49,15 @@
             <span style="--i:2;"><img src="salad.jpg" class="food salad" style="height: 250px"></span>
             <span style="--i:3;"><img src="salmon.jpg" class="food salmon" style="height: 250px"></span>
             <span style="--i:4;"><img src="dessert.jpg" class="food dessert" style="height: 250px"></span>
-            <span style="--i:5;"><img src="pancakes.jpg" class="food pancakes"
+            <!-- <span style="--i:5;"><img src="pancakes.jpg" class="food pancakes"
                     style="height: 250px; width: 200px"></span>
+            <span style="--i:5;"><img src="best-burger.jpg" class="food best-burger"
+                    style="height: 250px; width: 200px"></span> -->
 
         </div>
-
+        <h3 class="main-header3">Delicious and Authentic Cuisine</h3>
         <div class="sub-container row">
-            <h3 class="main-header3">Delicious and Authentic Cuisine</h3>
-            <p class="description col-6">
+            <p class="description ">
                 Welcome to fancy foods website!
                 About the restaurant and the food.
                 Blah blah blah blah blah blah blah.
@@ -66,9 +68,9 @@
                 Blah blah blah blah blah blah blah.
                 Blah blah blah blah blah blah blah.
             </p>
-            <div class="sub-img col-5">
-                <img src="breakfast.jpg" class="breakfast" style="height: 250px; width: 350px">
-            </div>
+           
+            <img src="breakfast.jpg" class="breakfast" style="height: 250px; width: 250px">
+           
         </div>
         <div class="btn-container">
             <a class="btn btn-primary" href="catering.html" role="button">Place Order</a>

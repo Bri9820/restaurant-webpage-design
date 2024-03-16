@@ -7,7 +7,7 @@
 body {
     background-color: black;
 }
-
+/* home page */
 .img-container {
     display: flex;
     align-items: center;
@@ -16,52 +16,19 @@ body {
 }
 
 .img-container span {
-    padding: 6px;
+    padding: 4px;
 }
 
-/* .img-container {
-    position: relative;
-    transform-style: preserve-3d;
-    animation: animate 20s linear infinite;
-}
 
-@keyframes animate {
-    0% {
-        transform: perspective(1000px) rotateY(0deg);
-    }
-
-    100% {
-        transform: perspective(1000px) rotateY(360deg);
-    }
-} */
-
-/* .img-container span {
-    position: absolute; 
- top: 0;
-    left: 0; 
- width: 100%;
-    height: 40%; 
- transform-origin: center; 
-transform-style: preserve-3d;
-transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
-} */
-
-
-/* .img-container span img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-} */
 
 p.description {
     color: orange;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    padding: 10px;
     max-width: 40%;
-    font-size: 1.2rem;
+    
 }
 
 .main-container h1 {
@@ -78,6 +45,7 @@ p.description {
 .main-container h3 {
     color: aqua;
     display: flex;
+
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -89,9 +57,10 @@ p.description {
 
 
 .sub-container {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+   
     margin: 40px;
     opacity: 0;
 }
@@ -105,13 +74,25 @@ p.description {
     justify-content: center;
     font-family: sans-serif;
     font-size: larger;
+
 }
 
 a.nav-link {
     color: orange;
+    padding: 10px;
+    
 
 }
-
+.navbar-toggler{
+    border-color: orange;
+    color: orange;
+    background-color: orangered;
+}
+.navbar-toggler-icon{
+    /* color: orange; */
+    background-color: orange;
+    
+}
 a.nav-link:hover {
     color: orangered;
 }
@@ -163,6 +144,7 @@ a.nav-link:hover {
     color: orangered;
 }
 
+
 /* menu page */
 .menu-container {
     background-color: black;
@@ -206,6 +188,7 @@ ul li {
 section.team-container {
     width: 100%;
     height: 100%;
+    padding: 20px;
     background-color: black;
 }
 
@@ -359,6 +342,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
+
     opacity: 0;
 }
 
@@ -368,3 +352,113 @@ input {
     border: 2px;
     background: linear-gradient(blueviolet, darkblue);
 }
+
+ /*responsive styles small devices and tablets */
+ @media only screen and (min-device-width: 300px) {
+    a.nav-link{
+        padding: 0px;
+    }
+  }
+  @media only screen and (max-device-width: 700px) {
+    .sub-container{
+        padding: 20px;
+    }
+    p.description{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        font-size: 15px;
+        padding: 8px;
+        }
+    }
+
+  @media only screen and (min-device-width: 770px) {
+    a.nav-link{
+        padding: 10px;
+    }
+  }
+ @media only screen and (max-device-width: 1000px) {
+    .nav-container{
+        padding: 95px;
+    }
+    /* a.nav-link{
+        padding: 0px;
+    } */
+    .main-container{
+        width: 100%;
+        padding-top: 140px;
+        font-size: small;  
+        
+    }
+    .menu.main{
+        width: 100%;
+        padding-top: 140px;
+    }
+    .team-container{
+        width: 100%;
+        padding-top: 140px;
+    }
+    .img-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 20px;
+        display:none;
+        
+    }
+    .main-header2{
+        padding-left: 50px;
+        font-size: .9rem;
+    }
+
+   
+    .img-container{
+        display: block;
+    }
+   
+    .team-description{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .team-header{
+        padding: 20px;
+    }
+    .gallery-space{
+        width: 100%;
+        height: 100px;
+        background-color: black;
+    }
+    .catering-space{
+        width: 100%;
+        height: 100px;
+        background-color: black;  
+    }
+   .card-body{
+    font-size: 10px;
+   }
+   .reservations-space{
+         width: 100%;
+        height: 100px;
+        background-color: black;
+   }
+  .contact-space{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+  }
+  .contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contact-container h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+ }
